@@ -28,9 +28,42 @@ modalsCloseBtns.forEach((modalsCloseBtns) => {
 });
 
 // Portfolio section - Modal
+const portfolioModals = document.querySelectorAll(".portfolio-modal");
+const imgCard = document.querySelectorAll(".img-card"); 
+const portfolioCloseBtns = document.querySelectorAll(".portfolio-close-btn"); 
+
+var portfolioModal = function(modalClick){
+    portfolioModals[modalClick].classList.add("active");
+}
+
+imgCard.forEach((imgCard, i) => {
+    imgCard.addEventListener("click", () => {
+        portfolioModal(i);
+    });
+});
+
+portfolioCloseBtns.forEach((portfolioCloseBtns) => {
+    portfolioCloseBtns.addEventListener("click", () => {
+        portfolioModals.forEach((portfolioModalView) => {
+            portfolioModalView.classList.remove("active");
+        });
+    });
+});
 
 // Our clients - Swiper
-
+var swiper = new Swiper(".client-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 // Website dark/light theme
 
 // Scroll to top button
