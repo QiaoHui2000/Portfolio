@@ -11,13 +11,22 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
   </head>
   <body>
+       <!-- ======== Scroll to top button ======== -->
+       <div class="scrollToTop-btn flex-center">
+        <i class="fas fa-arrow-up"></i>
+       </div>
+       <!-- ======== Light/Dark theme button ======== -->
+        <div class="theme-btn flex-center">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </div>
       <!-- ======== Header ======== -->
        <header>
         <div class="nav-bar">
             <a href="#" class="logo">QH</a>
             <div class="navigation">
                 <div class="nav-items">
-                    <a href="#home">Home</a>
+                    <a class="active" href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
                     <a href="#services">Services</a>
@@ -438,10 +447,82 @@
                         </div>
                     </div>
              </section>
+             
+             <!-- ======== Contact section ======== -->
+              <section class="contact section" id="contact">
+                <div class="container flex-center">
+                    <h1 class="section-title-01">Contact Me</h1>
+                    <h2 class="section-title-02">Contact Me</h2>
+                    <div class="content">
+                        <div class="contact-left">
+                            <h2>Let's discuss your project</h2>
+                            <ul class="contact-list">
+                                <li>
+                                    <h3 class="item-title"><i class="fas fa-phone"></i> Phone</h3>
+                                    <span>+6011-1066 1442</span>
+                                </li>
+                                <li>
+                                    <h3 class="item-title"><i class="fas fa-envelope"></i> Email Address</h3>
+                                    <span><a href="mailto:qiaohuiong2000@gmail.com">qiaohuiong2000@gmail.com</a></span>
+                                </li>
+                                <li>
+                                    <h3 class="item-title"><i class="fas fa-map-marker-alt"></i> Office Address</h3>
+                                    <span>154, Jalan BS 6/7, Taman Bukit Serdang, 43300 Seri Kembangan, Selengor.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contact-right">
+                            <p>I'm always open to discussing product<br><span>design work or partnerships.</span> </p>
+                            <form action="" class="contact-form">
+                                <div class="first-row">
+                                    <input type="text" placeholder="Name">
+                                </div>
+                                <div class="second-row">
+                                    <input type="email" placeholder="Email">
+                                    <input type="text" placeholder="Subject">
+                                </div>
+                                <div class="third-row">
+                                    <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+                                </div>
+                                <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              </section>
 
-          
-
-               <!-- ======== Footers ======== -->
+              <!-- ======== Footers ======== -->
+               <footer>
+                <div class="footer-container">
+                    <div class="about group">
+                        <h2>Qiao Hui</h2>
+                        <p>Front-end Developer</p>
+                        <a href="#about">About Me</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="info group">
+                        <h3>More</h3>
+                        <ul>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="follow group">
+                        <h3>Follow</h3>
+                        <ul>
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-copyright group">
+                    <p>Ⓒ 2024 by QH. All rights reserved.</p>
+                </div>
+               </footer>
            <!-- ======== External scripts ======== -->
             <script src="js/swiper-bundle.min.js"></script>
             <script src="js/main.js"></script>
